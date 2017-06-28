@@ -296,6 +296,16 @@ character level diffs
 #+BEGIN_SRC emacs-lisp
 (global-set-key (kbd "C-x g") 'magit-status)
 #+END_SRC
+
+As M-w is bound to magit-copy-buffer-revision by default, it's making really
+hard to copy from a magit buffer.
+#+BEGIN_SRC emacs-lisp
+(with-eval-after-load 'magit
+  (define-key magit-mode-map (kbd "M-w") 'kill-ring-save))
+#+END_SRC
+
+
+
 ** helm
 #+BEGIN_SRC emacs-lisp
 (package-install 'helm)
