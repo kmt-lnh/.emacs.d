@@ -104,6 +104,23 @@ https://github.com/jschaf/dotemacs/blob/master/init.el
 ;; setting y/n
 (fset 'yes-or-no-p 'y-or-n-p)
 #+END_SRC
+
+** editing
+Stopping in camelCase words.
+#+BEGIN_SRC emacs-lisp
+(global-subword-mode 1)
+#+END_SRC
+Overwrite selected text.
+#+BEGIN_SRC emacs-lisp
+(delete-selection-mode 1)
+#+END_SRC
+
+** encoding
+Picking utf-8 as default.
+#+BEGIN_SRC emacs-lisp
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
+#+END_SRC
 * Org mode settings
 ** key combinations
 Classic settings
