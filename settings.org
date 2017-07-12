@@ -152,6 +152,12 @@ appropriate config file.
 (setq org-src-fontify-natively t)
 #+END_SRC
 
+Plain lists are displayed in a folded state. Especially useful when holding data
+in the DONE/RESCHEDULED lists.
+#+BEGIN_SRC emacs-lisp
+(setq org-cycle-include-plain-lists 'integrate)
+#+END_SRC
+
 *** windows interop
 
 org-mode to open xls,xlsx in excel
