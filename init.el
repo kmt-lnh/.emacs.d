@@ -20,8 +20,3 @@
 ;; http://stackoverflow.com/questions/34983106/how-to-install-org-drill
 (require 'cl)
 (require 'org-drill)
-
-
-
-
-

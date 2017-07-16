@@ -10,7 +10,6 @@
  '(csv-separators (quote (";" "	")))
  '(custom-enabled-themes (quote (tango-dark)))
  '(diary-entry-marker (quote diary))
- ;; trying out elfeed 
  '(elfeed-feeds
    (quote
     ("http://feeds.feedburner.com/NoTechMagazine?format=xml" "http://feeds.feedburner.com/Metafilter")))
@@ -23,7 +22,8 @@
     (org-board haskell-mode jedi company-anaconda anaconda-mode py-autopep8 csv-mode elfeed elfeed-goodies elfeed-org emacsql multiple-cursors javadoc-lookup vlf dired+ bookmark+ undo-tree use-package expand-region omnisharp clojure-cheatsheet clojure-mode org-drill-table helm ess ess-R-object-popup ess-view ace-window z3-mode paredit magit helm-projectile fsharp-mode elm-mode auto-complete)))
  '(python-shell-interpreter "python")
  '(rng-nxml-auto-validate-flag nil)
- '(show-paren-mode t))
+ '(show-paren-mode t)
+ '(ediff-split-window-function (quote split-window-horizontally)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
