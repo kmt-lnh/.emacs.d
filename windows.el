@@ -62,6 +62,13 @@
      "* %^{Event}
      %t
      %?")
+     ("s" "Spaced Repetition Card")
+     ("ss"
+      "Statistics Card"
+      entry
+      (file+headline "" "captured")
+      "*** %^{Topic} :drill: \n:PROPERTIES:\n:Created: %U\n:END:\n"
+      )
      ))
 
 ;; setq outlook-hook-script
