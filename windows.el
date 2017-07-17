@@ -68,6 +68,17 @@
       entry
       (file+headline "" "captured")
       "*** %^{Topic} :drill: \n:PROPERTIES:\n:Created: %U\n:END:\n"
+      )     ("ss"
+      "Statistics Card"
+      entry
+      (file+headline "" "captured")
+      "*** %^{Topic} :drill: \n:PROPERTIES:\n:Created: %U\n:END:\n\n**** %^{Question}\n\n**** Answer"
+      )
+     ("sp"
+      "Programming Card"
+      entry
+      (file+headline "" "captured")
+      "** %^{Topic} :drill: \n:PROPERTIES:\n:Created: %U\n:END:\n\n**** %^{Question}\n\n**** Answer"
       )
      ))
 
