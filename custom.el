@@ -14,6 +14,7 @@
  '(elfeed-feeds
    (quote
     ("http://feeds.feedburner.com/NoTechMagazine?format=xml" "http://feeds.feedburner.com/Metafilter")))
+ '(haskell-mode-hook (quote (haskell-indentation-mode interactive-haskell-mode)))
  '(org-capture-bookmark nil)
  '(org-modules
    (quote

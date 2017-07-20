@@ -5,6 +5,7 @@
             (cond ((eq system-type 'windows-nt) "windows.el"))
             user-emacs-directory))
 
+(setq haskell-mode-hook nil)
 (setq custom-file "~/.emacs.d/custom.el")
 (load-file (expand-file-name custom-file user-emacs-directory))
 ;;(load custom-file)

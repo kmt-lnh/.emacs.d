@@ -376,9 +376,3 @@ hard to copy from a magit buffer.
        (get-buffer-process (current-buffer))
        nil "_"))))
 #+END_SRC
-** haskell mode
-Enable interactive haskell mode for all Haskell buffers.
-#+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'haskell-mode
-(add-hook ’haskell-mode-hook ’interactive-haskell-mode))
-#+END_SRC
