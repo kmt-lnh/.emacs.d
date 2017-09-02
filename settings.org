@@ -121,6 +121,12 @@ Picking utf-8 as default.
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 #+END_SRC
+** recursive editing
+From [[http://www.wilfred.me.uk/.emacs.d/init.html][here]], adjusting the minibuffer.
+#+BEGIN_SRC emacs-lisp
+(setq enable-recursive-minibuffers t)
+(minibuffer-depth-indicate-mode 1)
+#+END_SRC
 * Org mode settings
 ** key combinations
 Classic settings
