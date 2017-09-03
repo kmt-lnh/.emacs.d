@@ -99,12 +99,17 @@ https://github.com/jschaf/dotemacs/blob/master/init.el
                 'beginning-of-line-or-indentation)
 #+END_SRC
 
+** movement
+#+BEGIN_SRC emacs-lisp
+(setq scroll-preserve-screen-position 'always)
+(keyfreq-mode 1)
+(keyfreq-autosave-mode 1)
+#+END_SRC
 ** y/n
 #+BEGIN_SRC emacs-lisp
 ;; setting y/n
 (fset 'yes-or-no-p 'y-or-n-p)
 #+END_SRC
-
 ** editing
 Stopping in camelCase words.
 #+BEGIN_SRC emacs-lisp
@@ -260,7 +265,7 @@ getting outlook references of emails for indexing inbox + opening GUID links
     (define-key undo-tree-map (kbd "C-x u") 'undo-tree-visualize)
     (define-key undo-tree-map (kbd "C-/") 'undo-tree-undo)))
 
-
+(setq undo-tree-visualizer-timestamps t)
 ;; smart bookmarking within emacs
 (require 'bookmark+)
 (use-package bookmark+
